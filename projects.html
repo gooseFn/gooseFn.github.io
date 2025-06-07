@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт Гусева Олега</title>
+    <link rel="stylesheet" href="styleCommon.css">
+    <link rel="stylesheet" href="styleProjectPage.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="./index.html">Гусев Олег</a>
+    <header>
+        <a class="name" href="./index.html">Гусев Олег</a>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="./blog.html">Блог</a></li>
                 <li><a href="./projects.html">Проекты</a></li>
                 <li><a href="./hobby.html">Хобби</a></li>
@@ -20,22 +22,38 @@
         </nav>
     </header>
 
-    <main class="main">
-        <h1>Мои Проекты</h1>
-        <p>Проекты, которые я успел создать. Их сейчас мало, но это вопрос времени)</p>
-        <ul>
-            <li><a
-                    href="https://docs.google.com/document/d/1bKC0qQwrN1Qjyr9jYVad8Av6uBDy-Mam/edit?usp=drive_link&ouid=112346358810067199995&rtpof=true&sd=true">Проект
-                    за 11 класс(видеоигры)</a></li>
-            <li><a href="https://github.com/gooseFn/myProject">Мой первый сайт</a></li>
-        </ul>
-        <img src="./images/c8c4cb204841bf8294a0bb1d81c98fc9.jpg" alt="Фото" width="500" height="600">
-    </main>
+    <main class="projects">
+        <section class="infoProjects">
+            <h1 class="myProjects">Мои Проекты&#128126;</h1>
+            <p>Проекты, которые я успел создать. Их сейчас мало, но это вопрос времени:)</p>
 
-    <footer class="footer">
+            <ul class="blocks">
+                <li>
+                    <a href="https://docs.google.com/document/d/1bKC0qQwrN1Qjyr9jYVad8Av6uBDy-Mam/edit?usp=drive_link&ouid=112346358810067199995&rtpof=true&sd=true"
+                        target="_blank" class="blockLink">
+                        <div class="block" id="one">
+                            <p class="textInBlock">Проект
+                                за 11 класс(видеоигры)</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/gooseFn/myProject" target="_blank" class="blockLink">
+                        <div class="block" id="two">
+                            <p class="textInBlock">Мой первый сайт</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <aside>
+            <img src="./images/png2.png" alt="Фото" width="480" height="680">
+        </aside>
+    </main>
+    <footer>
         <div>
-            <h3>Контакты</h3>
-            <ul>
+            <ul class="navigation">
                 <li><a href="https://vk.com/goose_fn" target="_blank">Вконтакте</a></li>
                 <li><a href="https://t.me/goose_FN" target="_blank">Телеграмм</a></li>
                 <li><a href="https://github.com/gooseFn" target="_blank">Гитхаб</a></li>

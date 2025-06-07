@@ -1,0 +1,48 @@
+.about_me {
+    flex: 1;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+    min-width: 45%;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+}
+
+.myQuotes {
+    font-size: 1.5 rem;
+    display: flex;
+    align-items: center;
+}
+
+.quote {
+    text-decoration: underline;
+    align-self: flex-end;
+    font-style: italic;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.585);
+}
+
+.introduction {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.information {
+    gap: 10%;
+    flex-direction: row;
+}
