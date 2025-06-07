@@ -65,3 +65,9 @@ aside {
 .myProjects {
     margin: 0;
 }
+
+.projectPhoto {
+    margin-bottom: initial;
+    border-radius: initial;
+    box-shadow: initial;
+}
