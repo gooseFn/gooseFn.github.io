@@ -11,15 +11,14 @@
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="light-theme">
     <header>
-        <a class="name" href="./index.html">Гусев Олег</a>
+        <div class="profile">
+            <a class="name" href="./index.html">Гусев Олег</a>
+            <button id="themeToggle">🌙</button>
+        </div>
         <nav>
-            <ul class="navigation">
-                <li><a href="./blog.html">Блог</a></li>
-                <li><a href="./projects.html">Проекты</a></li>
-                <li><a href="./hobby.html">Хобби</a></li>
-                <li><a href="./resume.html">Резюме</a></li>
+            <ul class="navigation" id="header">
             </ul>
         </nav>
     </header>
@@ -30,22 +29,6 @@
             <p>Проекты, которые я успел создать. Их сейчас мало, но это вопрос времени:)</p>
 
             <ul class="blocks">
-                <li>
-                    <a href="https://docs.google.com/document/d/1bKC0qQwrN1Qjyr9jYVad8Av6uBDy-Mam/edit?usp=drive_link&ouid=112346358810067199995&rtpof=true&sd=true"
-                        target="_blank" class="blockLink">
-                        <div class="block" id="one">
-                            <p class="textInBlock">Проект
-                                за 11 класс(видеоигры)</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/gooseFn/myProject" target="_blank" class="blockLink">
-                        <div class="block" id="two">
-                            <p class="textInBlock">Мой первый сайт</p>
-                        </div>
-                    </a>
-                </li>
             </ul>
         </section>
 
@@ -55,14 +38,13 @@
     </main>
 
     <footer>
-        <div>
-            <ul class="navigation">
-                <li><a href="https://vk.com/goose_fn" target="_blank"><i class="bi bi-chat-fill"></i></a></li>
-                <li><a href="https://t.me/goose_FN" target="_blank"><i class="bi bi-telegram"></i></a></li>
-                <li><a href="https://github.com/gooseFn" target="_blank"><i class="bi bi-github"></i></a></li>
+        <nav>
+            <ul class="navigation" id="footer">            
             </ul>
-        </div>
+        </nav>
     </footer>
 </body>
-
+<script src="./script.js"></script>
+<script src="./projects.js"></script>
+<script src="./lightOrDark.js"></script>
 </html>

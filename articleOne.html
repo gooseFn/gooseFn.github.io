@@ -10,35 +10,29 @@
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="light-theme">
     <header>
-        <a class="name" href="./index.html">Гусев Олег</a>
+        <div class="profile">
+            <a class="name" href="./index.html">Гусев Олег</a>
+            <button id="themeToggle">🌙</button>
+        </div>
         <nav>
-            <ul class="navigation">
-                <li><a href="./blog.html">Блог</a></li>
-                <li><a href="./projects.html">Проекты</a></li>
-                <li><a href="./hobby.html">Хобби</a></li>
-                <li><a href="./resume.html">Резюме</a></li>
+            <ul class="navigation" id="header">
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Хочу домой...</h2>
-        <p>Я если честно, уже очень устал от учёбы и хочу вернуться в родной город, к друзьям и родителям ведь никто не
-            должен забывать кто он, кто его друзья и откуда он родом!</p>
-        <img src="./images/Фотка1.jpg" alt="Фотка" width="400" height="400">
     </main>
 
     <footer>
-        <div>
-            <ul class="navigation">
-                <li><a href="https://vk.com/goose_fn" target="_blank"><i class="bi bi-chat-fill"></i></a></li>
-                <li><a href="https://t.me/goose_FN" target="_blank"><i class="bi bi-telegram"></i></a></li>
-                <li><a href="https://github.com/gooseFn" target="_blank"><i class="bi bi-github"></i></a></li>
+        <nav>
+            <ul class="navigation" id="footer">
             </ul>
-        </div>
+        </nav>
     </footer>
 </body>
-
+<script src="./script.js"></script>
+<script src="./article.js"></script>
+<script src="./lightOrDark.js"></script>
 </html>

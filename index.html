@@ -11,16 +11,15 @@
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="light-theme">
     <header>
-        <a class="name" href="./index.html">Гусев Олег</a>
+        <div class="profile">
+            <a class="name" href="./index.html">Гусев Олег</a>
+            <button id="themeToggle">🌙</button>
+        </div>
         <h2 class="introduction">Проходи, не задерживайся:)</h2>
         <nav>
-            <ul class="navigation">
-                <li><a href="./blog.html">Блог</a></li>
-                <li><a href="./projects.html">Проекты</a></li>
-                <li><a href="./hobby.html">Хобби</a></li>
-                <li><a href="./resume.html">Резюме</a></li>
+            <ul class="navigation" id="header">
             </ul>
         </nav>
     </header>
@@ -46,54 +45,18 @@
             <h2 class="myQuotes" style="display: inline;">Мои любимые цитаты</h2>
             <span>&#129488</span>
             <div class="quotes">
-                <p>
-                    Порой нам нужно принять решение, от которого будет зависеть наша судьба… И не только наша. Но иногда
-                    мы
-                    понимаем: чтобы сделать человека счастливым, правильнее будет его отпустить, как бы тяжело это ни
-                    было…
-                    Да,
-                    так будет лучше… Наверное.
-                </p>
-                <a class="quote" href="https://kitchen.fandom.com/ru/wiki/Макс" target="_blank">Максим Лавров
-                    («Огузок»)</a>
-                <p>
-                    Зачастую, только чувствуя приближение конца, мы можем что-то изменить.
-                </p>
-                <a class="quote" href="https://kitchen.fandom.com/ru/wiki/Макс" target="_blank">Максим Лавров
-                    («Огузок»)</a>
-                <p>
-                    Ну я сразу почувствовал, что между нами что-то есть. Ну какое-то притяжение, связь.. блютус! Ну или
-                    харизма какая-то.
-                </p>
-                <a class="quote" href="https://ru.wikipedia.org/wiki/Наумов,_Николай_Александрович_(актёр)"
-                    target="_blank">Николай Наумов («Колян»)</a>
-                <p>
-                    Лучше синица в руках, чем журавль в небе… а журавль, сука, красивый!
-                </p>
-                <a class="quote" href="https://ru.wikipedia.org/wiki/Наумов,_Николай_Александрович_(актёр)"
-                    target="_blank">Николай Наумов («Колян»)</a>
-                <p>
-                    Все мы хотим казаться сильными, хотя на самом деле состоим из слабостей.
-                </p>
-                <a class="quote" href="https://kitchen.fandom.com/ru/wiki/Макс" target="_blank">Максим Лавров
-                    («Огузок»)</a>
-                <p>
-                    Лишь утратив всё до конца, мы обретаем свободу.
-                </p>
-                <a class="quote" href="https://villains.fandom.com/wiki/Tyler_Durden" target="_blank">Тайлер Дерден</a>
             </div>
         </aside>
     </main>
 
     <footer>
-        <div>
-            <ul class="navigation">
-                <li><a href="https://vk.com/goose_fn" target="_blank"><i class="bi bi-chat-fill"></i></a></li>
-                <li><a href="https://t.me/goose_FN" target="_blank"><i class="bi bi-telegram"></i></a></li>
-                <li><a href="https://github.com/gooseFn" target="_blank"><i class="bi bi-github"></i></a></li>
+        <nav>
+            <ul class="navigation" id="footer">
             </ul>
-        </div>
+        </nav>
     </footer>
 </body>
-
+<script src="./script.js"></script>
+<script src="./quotes.js"></script>
+<script src="./lightOrDark.js"></script>
 </html>

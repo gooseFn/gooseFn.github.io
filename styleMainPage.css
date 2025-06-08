@@ -10,6 +10,8 @@
 aside {
     flex: 1;
     min-width: 45%;
+    min-height: 0;
+    margin-bottom: 20px;
 }
 
 .quotes {

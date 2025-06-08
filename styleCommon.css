@@ -27,6 +27,22 @@ body {
     background-color: rgb(238, 238, 238);
     padding: 15px;
     box-sizing: border-box;
+    transition: color 1s;
+}
+
+body.light-theme {
+    background-color: rgb(238, 238, 238);
+    ;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .name {
+    color: white;
 }
 
 header {
@@ -42,6 +58,7 @@ h2 {
 }
 
 .name {
+    transition: color 1s;
     color: black;
     font-weight: bold;
 }
@@ -86,4 +103,75 @@ img {
 
 .bi {
     font-size: 30px;
+}
+
+#themeToggle {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 21px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.5s, opacity 0.8s;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#themeToggle:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    main {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    aside {
+        padding-bottom: 200px;
+    }
+
+    header {
+        padding-block: 1rem;
+    }
+
+    header .navigation {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer {
+        padding-block: 1rem;
+        border-radius: 15px;
+    }
+
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .animePhoto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articlePhoto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocks {
+        grid-template-columns: 1fr !important;
+    }
 }
